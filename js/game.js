@@ -5,6 +5,12 @@
 // Created by: Hames.al-sharoa
 // This is the phaser3 game configuration file
 
+// sene import statements
+import SplashScene from "./splashScene.js"
+
+// create the new scenes
+  const splashScene = SplashScene()
+
 /** 
  * Start  Phaser Game.
   */
@@ -29,3 +35,6 @@
 
 const game = new Phaser.Game(config)
 console.log(game)
+
+// the start scene
+game.scene.start("splashScene")
