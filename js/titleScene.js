@@ -32,7 +32,7 @@ class TitleScene extends Phaser.Scene {
      * Use it to load assets.
      */
     preload() {
-      console.log("Title Scene")
+      console.log("title Scene")
     }
     
     /**
