@@ -12,7 +12,7 @@ import splasgScene from "./splashScene.js"
   import TitleScene from "./titleScene.js"
 
  // create the new scene
-  const splashScene = new splasgScene
+  const SplasgScene = new splashScene()
   const titleScene = new TitleScene()
 
   /**
@@ -42,7 +42,7 @@ import splasgScene from "./splashScene.js"
 
  // load scenes
  // Note: remember any "key" is global and CAN NOT be reused!
- ame.scene.add("splashScene", splashScene)
+ game.scene.add("splashScene", splasgScene)
  game.scene.add("titleScene", titleScene)
 
  // the state scene
