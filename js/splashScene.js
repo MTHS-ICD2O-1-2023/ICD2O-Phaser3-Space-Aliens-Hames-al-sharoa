@@ -9,7 +9,7 @@
  /**
   * this class is the splash Scene.
   */
-class splashScene extends Phaser.Scene {
+class SplashScene extends Phaser.Scene {
   /**
     * this method is the construtor
     */
@@ -32,7 +32,7 @@ class splashScene extends Phaser.Scene {
      * Use it to load assets.
      */
     preload(){
-      console.log("splash Scene")
+      console.log("Splash Scene")
     }
     
     /**
@@ -45,7 +45,7 @@ class splashScene extends Phaser.Scene {
     }
 
     /**
-     * should be overridden by your own Scenes.
+     * Should be overridden by your own Scenes.
      * This method is called once per game step while the scene is running.
      * @param {number} time - The current time.
      * @param {number} delta - The delta time in ms since the last frame. 
@@ -55,4 +55,4 @@ class splashScene extends Phaser.Scene {
       }
     }
 
-    export default splashScene 
+    export default SplashScene 
