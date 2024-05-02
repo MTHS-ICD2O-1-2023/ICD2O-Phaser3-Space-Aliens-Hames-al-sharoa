@@ -42,8 +42,8 @@ import splasgScene from "./splashScene.js"
 
  // load scenes
  // Note: remember any "key" is global and CAN NOT be reused!
- game.scene.add("splashScene", splasgScene)
- game.scene.add("titleScene", titleScene)
+ game.scene.add("SplashScene", splasgScene)
+ game.scene.add("TitleScene", titleScene)
 
  // the state scene
- game.scene.start("splashScene")
+ game.scene.start("SplashScene")
