@@ -55,4 +55,4 @@ class TitleScene extends Phaser.Scene {
     }
   }
   
-  export default TitleScene
+    export default TitleScene
