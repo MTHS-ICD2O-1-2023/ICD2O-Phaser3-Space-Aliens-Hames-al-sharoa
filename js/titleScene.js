@@ -15,6 +15,13 @@ class TitleScene extends Phaser.Scene {
    */
   constructor() {
     super({ Key: "titleScene"})
+    this.TitleSceneBackgroundImage = null
+    this.TitleSceneText = null
+    this.TitleSceneTextStyle = {
+      fint: "200px Times",
+      fill: "#fde4b9"
+      align: "center",
+    }
   }
 
   /**
@@ -33,6 +40,7 @@ class TitleScene extends Phaser.Scene {
      */
     preload() {
       console.log("Title Scene")
+      this.preload.image("titleSceneBackgroung", "assets/aliens_screen_image.jpg")
     }
     
     /**
@@ -41,7 +49,16 @@ class TitleScene extends Phaser.Scene {
      * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start()
      */
     create(data) {
-      //pass
+      this.TitleSceneBackgroundImage = this.add
+      .sprite(0, 0, "titleSceneBackground")
+      .setScale(2.75)
+      this.TitleSceneBackgroundImage.x = 1920 / 2
+      this.TitleSceneBackgroundImage.y = 1080 / 2
+
+      this.TitleSceneText = this.add
+      .text(1920 / 2, 1080 / 2 + 350, "Space Aliens", this.TitleSceneTextStyle)
+      .set0rinig(0.5)
+      
     }
     
     /**
