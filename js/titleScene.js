@@ -19,7 +19,7 @@ class TitleScene extends Phaser.Scene {
     this.TitleSceneText = null
     this.TitleSceneTextStyle = {
       fint: "200px Times",
-      fill: "#fde4b9"
+      fill: "#fde4b9",
       align: "center",
     }
   }
@@ -73,3 +73,4 @@ class TitleScene extends Phaser.Scene {
   }
   
     export default TitleScene
+    
