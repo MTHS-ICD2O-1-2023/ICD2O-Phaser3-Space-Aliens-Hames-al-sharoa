@@ -14,7 +14,7 @@
  // create the new scene
   const SplasgScene = new splashScene()
   const titleScene = new TitleScene()
-  const menuScene = new menuScene()
+  const menuScene = new MenuScene()
 
   /**
  * start phaser Game.
