@@ -15,6 +15,7 @@ class TitleScene extends Phaser.Scene {
    */
   constructor() {
     super({ Key: "titleScene"})
+    
     this.TitleSceneBackgroundImage = null
     this.TitleSceneText = null
     this.TitleSceneTextStyle = {
@@ -73,4 +74,3 @@ class TitleScene extends Phaser.Scene {
   }
   
     export default TitleScene
-    

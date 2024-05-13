@@ -7,12 +7,12 @@
 // This is the phaser3 game configuration file
 
  // scene import statements
-  import splashScene from "./splashScene.js"
-  import splasgScene from "./splashScene.js"
+  import SplashScene from "./splashScene.js"
   import TitleScene from "./titleScene.js"
+  import MenuScene from "./menuScene.js"
 
- // create the new scene
-  const SplasgScene = new splashScene()
+ // create the new scenes
+  const splashScene = new SplashScene()
   const titleScene = new TitleScene()
   const menuScene = new MenuScene()
 
@@ -43,9 +43,9 @@
 
  // load scenes
  // Note: remember any "key" is global and CAN NOT be reused!
- game.scene.add("SplashScene", splasgScene)
+ game.scene.add("splashScene",splashScene)
  game.scene.add("TitleScene", titleScene)
-game.scene.add("menuScene", menuScene)
+game.scene.add("MenuScene", menuScene)
 
  // the state scene
- game.scene.start("SplashScene")
+ game.scene.start("splashScene")
